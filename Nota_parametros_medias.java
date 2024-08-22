@@ -13,7 +13,7 @@ public class Nota_parametros_medias {
         }
 
         public static float media_Harmonica(float a, float b, float c){
-            float media_c= 1/((1/a)+(1/b)+(1/c));
+            float media_c= 3/((1/a)+(1/b)+(1/c));
             System.out.println("Sua média harmonica é "+media_c);
             return media_c;
         }
