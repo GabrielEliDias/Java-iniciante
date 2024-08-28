@@ -77,7 +77,7 @@ public class Jogo_da_comparação {
             {
                 jogador2_maior1 = cartas_jogador2[i];
             }
-            else if(jogador2_maior1 >= cartas_jogador2[i] && cartas_jogador2[i] > jogador2_maior2 && jogador2_maior2 < jogador2_maior1)
+            else if(cartas_jogador2[i] > jogador2_maior2 && jogador2_maior2 < jogador2_maior1)
             {
                 jogador2_maior2 = cartas_jogador2[i];
             }
