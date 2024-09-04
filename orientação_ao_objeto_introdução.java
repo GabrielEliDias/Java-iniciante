@@ -5,24 +5,16 @@ public class orientação_ao_objeto_introdução {
 //Exeplo: livraria, sistema para administração de uma livraria!
     public static void main(String[] args)
     {   
-        Autor autor1 = new Autor();
-        autor1.nome = "robert Martin";
-        autor1.email = "robertmartin@professor.cesupa.br";
-        autor1.cpf = "123.456.789.10";
-        livro livro = new livro();
-        livro.nome = "Código limpo";
-        livro.descrição = "como criar e organizar seu código";
-        livro.valor = 70.00;
-        livro.isbn = "857-108-267-5";
+        //contrutor paremtrizado: 
+        Autor autor1 = new Autor("robert martin","robertmartin@professor.cesupa.br", "123.456.789.10" );
+        autor1.mostrar_info_autor();
+        livro livro = new livro("Código limpo","como criar e organizar seu código", 70.00, "857-108-267-5");
         livro.autor = autor1;
         livro.mostrar_detalhes();
-
-        livro livro2 = new livro();
-        livro2.nome = "revolução dos bichos";
-        livro2.descrição = "critica ao socialismo";
-        livro2.valor = 50.00;
-        livro2.isbn = "123-456-789-9";
+        livro livro2 = new livro("revolução dos bichos","critica ao socialismo",50.00,"123-456-789-9");
         livro2.mostrar_detalhes();
+
+        
         
         
     }
